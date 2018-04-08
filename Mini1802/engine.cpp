@@ -22,10 +22,20 @@ void engine::update() {
   if (key & PAD_INPUT_RIGHT) {
     x += speed;
   }
+  for(auto& actor : actors_) {
+    actor->update();
+  }
 }
 
 void engine::render() const {
   DrawPixel(x, y, GetColor(255, 255, 255));
+  for(const auto& actor : actors_) {
+    actor->render();
+  }
 }
+
+  void engine::add_actor(std::unique_ptr<actor> actor) {
+    actors_.push_back(std::move(actor));
+  }
 
 } // namespace mini

@@ -7,17 +7,16 @@ class component {
 public:
   virtual ~component() = default;
   component() = delete;
-
   virtual void update() = 0;
   virtual void initialize() = 0;
 protected:
-  component(const actor& actor);
-  const actor& get_actor_() const;
+  explicit component(actor& actor);
+  actor& get_actor() const { return actor_; }
 private:
-  const actor& actor_;
+  actor& actor_;
 };
 
-inline component::component(const actor& actor): actor_(actor) {
+inline component::component(actor& actor): actor_(actor) {
 
 }
 

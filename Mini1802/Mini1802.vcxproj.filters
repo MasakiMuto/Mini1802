@@ -30,6 +30,12 @@
     <ClCompile Include="actor.cpp">
       <Filter>system</Filter>
     </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="actor_factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="engine.h">
@@ -43,6 +49,12 @@
     </ClInclude>
     <ClInclude Include="renderable.h">
       <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="actor_factory.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
