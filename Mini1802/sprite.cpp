@@ -1,5 +1,6 @@
 ﻿#include "sprite.h"
 #include "DxLib.h"
+#include "actor.h"
 
 namespace mini {
 
@@ -7,7 +8,8 @@ namespace mini {
   }
 
 void sprite::render() const {
-  DrawPixel(x, 10, GetColor(255, 128, 128));  
+  auto& pos =  get_actor().get_position();
+  DrawPixel(pos.get_x(), pos.get_y(), GetColor(255, 128, 128));  
 }
 
 }

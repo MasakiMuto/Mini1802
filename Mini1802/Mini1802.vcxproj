@@ -126,6 +126,7 @@
     <ClCompile Include="actor.cpp" />
     <ClCompile Include="actor_factory.cpp" />
     <ClCompile Include="engine.cpp" />
+    <ClCompile Include="player_input.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="sprite.cpp" />
   </ItemGroup>
@@ -134,8 +135,10 @@
     <ClInclude Include="actor_factory.h" />
     <ClInclude Include="engine.h" />
     <ClInclude Include="component.h" />
+    <ClInclude Include="player_input.h" />
     <ClInclude Include="renderable.h" />
     <ClInclude Include="sprite.h" />
+    <ClInclude Include="vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

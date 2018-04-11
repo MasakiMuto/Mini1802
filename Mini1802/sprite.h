@@ -9,8 +9,6 @@ public:
   void initialize() override{}
   void update() override {} 
   void render() const override;
-
-  int x = 0;
 };
   
 }

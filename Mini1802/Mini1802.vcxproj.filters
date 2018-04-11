@@ -21,26 +21,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="program.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="engine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="actor.cpp">
       <Filter>system</Filter>
     </ClCompile>
-    <ClCompile Include="sprite.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="player_input.cpp">
+      <Filter>game</Filter>
     </ClCompile>
     <ClCompile Include="actor_factory.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="engine.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="program.cpp">
+      <Filter>system</Filter>
+    </ClCompile>
+    <ClCompile Include="sprite.cpp">
+      <Filter>system</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="engine.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="actor.h">
       <Filter>system</Filter>
     </ClInclude>
@@ -50,11 +50,20 @@
     <ClInclude Include="renderable.h">
       <Filter>system</Filter>
     </ClInclude>
-    <ClInclude Include="sprite.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
     <ClInclude Include="actor_factory.h">
-      <Filter>Source Files</Filter>
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="player_input.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="sprite.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="engine.h">
+      <Filter>system</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

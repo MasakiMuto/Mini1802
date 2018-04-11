@@ -6,7 +6,7 @@ namespace mini {
 
 class actor_factory {
 public:
-  std::unique_ptr<actor> create_player(int x) const;
+  std::unique_ptr<actor> create_player() const;
 };
   
 }
